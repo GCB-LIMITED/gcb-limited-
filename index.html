@@ -1,0 +1,57 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GCb Limited</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <header>
+        <h1>Welcome to GCb Limited</h1>
+        <p>Earn 1.5% ROI daily with secure cryptocurrency investments.</p>
+    </header>
+    <main>
+        <section id="about">
+            <h2>About Us</h2>
+            <p>GCb Limited offers secure and profitable cryptocurrency investment plans. Start earning today!</p>
+        </section>
+
+        <section id="deposit">
+            <h2>Deposit Funds</h2>
+            <p>Send your deposits to the following addresses:</p>
+            <ul>
+                <li>Bitcoin (BTC): <code>bc1qvpfp6ttkk39dyrq6elkyyv6x0na25gfuvnevkq</code></li>
+                <li>Ethereum (ETH): <code>0x51bf1375DBC7F1Ff70f4bbe57efc3DB7134a670c</code></li>
+                <li>Binance Coin (BNB): <code>0x51bf1375DBC7F1Ff70f4bbe57efc3DB7134a670c</code></li>
+                <li>Solana (SOL): <code>AbFEW2R9nGnCjmK4Q48iJiY2YFXY5ui2H268ZmPVhTba</code></li>
+            </ul>
+        </section>
+
+        <section id="crypto-prices">
+            <h2>Live Cryptocurrency Prices</h2>
+            <ul>
+                <li id="btc-price">BTC: Loading...</li>
+                <li id="eth-price">ETH: Loading...</li>
+                <li id="bnb-price">BNB: Loading...</li>
+                <li id="sol-price">SOL: Loading...</li>
+            </ul>
+        </section>
+
+        <section id="roi-calculator">
+            <h2>ROI Calculator</h2>
+            <label for="deposit-amount">Enter Deposit Amount:</label>
+            <input type="number" id="deposit-amount" placeholder="Enter amount in USD">
+            <button onclick="calculateROI()">Calculate</button>
+            <p id="roi-result"></p>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 GCb Limited. All rights reserved.</p>
+    </footer>
+
+    <script src="js/script.js"></script>
+</body>
+</html>
