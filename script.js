@@ -8,3 +8,13 @@ fetch('https://api.coingecko.com/api/v3/simple/price?ids=bitcoin,ethereum,binanc
         document.getElementById('bnb-price').textContent = `BNB: $${data.binancecoin.usd}`;
         document.getElementById('sol-price').textContent = `SOL: $${data.solana.usd}`;
     });
+// Calculate ROI
+function calculateROI() {
+    const deposit = parseFloat(document.getElementById('deposit-amount').value);
+    if (isNaN(deposit) || deposit <= 0) {
+        alert('Please enter a valid amount.');
+        return;
+    }
+    const roi = deposit * 0.015; // 1.5% daily ROI
+    document.getElementById('roi-result').textContent = `Daily ROI: $${roi.toFixed(2)}`;
+}
